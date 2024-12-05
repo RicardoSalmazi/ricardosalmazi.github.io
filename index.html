@@ -1,55 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricardo Salmazi | Portfolio</title>
-    <meta name="description" content="Portfolio to share experiences in Business Management activities and Data Analysis.">
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- link para concerter imagens em icons: https://favicon.io/favicon-converter/ -->
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Salmazi | Portfolio </title>
+  <meta name="description" content="Portfolio to share experiences in Business Management activities and Data Analysis.">
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <!-- <h1>Ricardo Salmazi</h1> -->
-    <header class="header">
-        <div class="header__brand">
-            <img class="brand__logo" src="assets/images/images/rico.ico" alt="Ric">
-        </div>
-        <i id="toggleTheme" class="bi bi-brightness-high"></i>
-    </header>
-    <nav>
-        <ul class="menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                    <i class="menu__icon bi bi-house-door"></i>
-                    <span class="menu__text">Home</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                    <i class="menu__icon bi bi-envelope"></i>
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>
-            <!-- shift + alt + seta abaixo pra copiar tudo pra baixo  -->
-        </ul>
+  <!-- link para concerter imagens em icons: https://favicon.io/favicon-converter/ -->
+  <!-- <h1>Ricardo Salmazi</h1> -->
+  <!-- shift + alt + seta abaixo pra copiar tudo pra baixo  --> 
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projects</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">About</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contact</span>
+          </a>
+        </li>
+      </ul>
     </nav>
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/images/rico.ico" alt="Ric">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>ricardo salmazi</b></h1>
+      <h2>
+        <span style="font-size: 24px;">Results driven | Business Management Consultant</span>
+      </h2>
+      <p>Vancouver-BC area, Business Consultant & Developer</p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/RicardoSalmazi" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/ricardosalmazi/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Some projects</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>
+    </div>
+    <div class="main__content2">
+      <video src="assets/videos/Case - Special Dog.mp4" title="Success case1:" controls>
+      </video>
+      <!-- <iframe src="assets/videos/Case - Special Dog.mp4" title="Success case1:" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      <!-- autoplay; -->
+    </div>    
+  </main>
+  <section class="technologies">
+    <h2>Main skills</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="skills__logo"  src="assets/images/ProcessSistPessoas2.png" alt="Logo Processos" width="600">
+      </li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>
+      <span style="font-size: 24px;">Projects Led</span>
+      <span style="font-size: 16px; margin-left: 2px;">by Ricardo Salmazi</span>
+    </h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/businessman-showing-business-evolution-with-a-graphic.jpg" alt="Projetos">
+        <div class="card__body">
+          <h3 class="card__title">Pet Food</h3>
+          <p class="card__description">Special Dog Co.</p>
+          <ul class="card__list">
+            <li class="card__item">Led productivity enhancement;</li>
+            <li class="card__item">Implemented cost-reduction initiatives;</li>
+            <li class="card__item">Developed a profitability assessment model </li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Yamana.PNG" alt="Yamana logo">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Bosch.PNG" alt="Bosch Logo">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Ecourbis.png" alt="Logo Ecourbis">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/BayerCropS.PNG" alt="Logo Bayer">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <span>previous</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <span>Repository</span>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/images/CapaCelular2.jpg" alt="">
+        <div class="card__body">
+          <h3 class="card__title">Automotive</h3>
+          <p class="card__description">Robert Bosch | Sabó / Automação</p>
+          <ul class="card__list">
+            <li class="card__item">Management System & KPIs;</li>
+            <li class="card__item">Processes enhancement;</li>
+            <li class="card__item">Autmoation</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Frutap.png" alt="Frutap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Bosch.PNG" alt="Bosch">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Behr.png" alt="Behr">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/Relima.png" alt="Relima">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <span>previous</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <span>Repository</span>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/RicardoSalmazi">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/Foto Ric lkdin.png" alt="Ric">
+      <div class="about__description">
+        <h2>About Me</h2>
+        <p>I've been working as Management Systems consultant for more 
+          than 30 years, acting as Business Analyst, with knowledge of 
+          IT themes and BI analysis. Python, R, JavaScript and some other 
+          tools used to perform my duties as Management Projects for worldwide 
+          companies in North America (USA, Mexico) and South America 
+          (Brazil, Peru, Colombia) mainly. Good practice in terms of software 
+          development, including NoCode and LowCode. PowerBI (Microsoft) analyst 
+          and user.
+        </p>  
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>English (Advanced) | Spanish (Advanced) | Portuguese (Native) | French (Low) | Russian (Low)</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/RicardoSalmazi/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conect with me</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <a href="">
+            <button class="btn">
+              <span>Résumé</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Academics</h3>
+          <h4>Mathematics | BA & Full Degree</h4>
+          <span>Data Science Enthusiast</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>USP - University of Sao Paulo (1981)</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Data Science - Harvard University (edx 2017 - 2018)</span>
+          </div>
+        </div>
+        <div class="row2">
+          <h3>Experiences</h3>
+          <h4>Business Consultant</h4>
+          <span>KSC Services Lt. | 2009 - Today</span>
+          <span>Eager to harmonize daily processes with an organization’s 
+            core objectives, leveraging only the best each professional 
+            has to offer, along with just the right dose of technology.
+          </span>
+          <ul class="about__list">
+            <li class="about__item">Redesign processes flow</li>
+            <li class="about__item">Cost avoidance</li>
+            <li class="about__item">Profitability</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col2">
+        <h3>Acknowledgements</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Tecnology background</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                In support of Business Management projects
+              </p>
+              <p>
+                •	Microsoft Office 365 family - Professional Level / VBA for Excel, Word, PowerPoint and MS Access 
+                •	Python, Html, CSS, Java Script user and developer
+                •	Language R and libraries
+                •	Salesforce: user, trailhead, familiar with the environment.
+                •	Microsoft Power Platform: Power BI Developer, Power Apps, and Web Publishing Routines.
+                •	Git / GitHub user (https://github.com/RicardoSalmazi)
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Git & Github contributor</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Nov 2024.
+              </p>
+              <p>
+                Lab prático sobre colaboração em projetos de código aberto.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>HTML, JavaScript, CSS developer, but not core activity </span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Digital Innovation One. Oct 2024
+              </p>
+              <p>
+                Contributing to entities that support the elderly - App dev.
+              </p>
+            </div>
+          </div>
+        </div>
+  </section>
+  
+  <section id="contato" class="contact">
+    <h2>Reache me out</h2>
+    <p>Available for business analysys, pricing strategies, workflow enhancement, profitability projects.</p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/RicardoSalmazi" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/RicardoSalmazi/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:salmazi.ricardo@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">salmazi.ricardo@gmail.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p> 
+      © 2024. All rights reserved. </a> Developed by
+      <a href="https://github.com/RicardoSalmazi" target="_blank">Ricardo Salmazi</a> | 
+      <a href="https://github.com/elidianaandrade" target="_blank"> Master: Elidiana Andrade</a> By 
+      <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a>
+      
+    </p>
+  </footer>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
